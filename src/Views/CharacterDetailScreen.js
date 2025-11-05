@@ -14,7 +14,7 @@ export default function CharactersDatailScreen({navigation, route}){
             </View>
             <View style={StyleDetailsList.textContainer}>
                 <Text style={StyleDetailsList.nome}>{item.name}</Text>
-                <Text style={StyleDetailsList.statusText}>Status: {item.status} ({item.species})</Text>
+                <Text style={StyleDetailsList.statusText}>Status: {item.status} ({item.species}) {item.gender}</Text>
                 <View style={StyleDetailsList.localizacaoContainer}>
                     <Text style={StyleDetailsList.localizacaoText}>Localização:</Text>
 

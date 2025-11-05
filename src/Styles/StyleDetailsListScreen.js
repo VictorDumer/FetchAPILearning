@@ -56,7 +56,7 @@ const StyleDetailsList = StyleSheet.create({
         marginRight: 5,
     },
     defaultText: {
-        color: '#E0E0E0', 
+        color: '#ffefefff', 
     },
 
 });
