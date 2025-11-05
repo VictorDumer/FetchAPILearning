@@ -26,19 +26,6 @@ const Personagem = ({navigation, item}) =>{
             <View style={StyleCharactersList.textContainer}>
                 <Text style={StyleCharactersList.nome}>{item.name}</Text>
                 <Text style={StyleCharactersList.statusText}>Status: {item.status} ({item.species})</Text>
-                <View style={StyleCharactersList.localizacaoContainer}>
-                    <Text style={StyleCharactersList.localizacaoText}>Localização:</Text>
-
-                    <View style={StyleCharactersList.localizacaoItem}>
-                        <Text style={StyleCharactersList.LocalizacaoOrigem}>Origem:</Text>
-                        <Text style={StyleCharactersList.defaultText}>{item.origin.name}</Text>
-                    </View>
-
-                    <View style={StyleCharactersList.localizacaoItem}>
-                        <Text style={StyleCharactersList.LocalizacaoOrigem}>Local Atual:</Text>
-                        <Text style={StyleCharactersList.defaultText}>{item.location.name}</Text>
-                    </View>
-                </View>
             </View>
     </View>
     </TouchableOpacity>

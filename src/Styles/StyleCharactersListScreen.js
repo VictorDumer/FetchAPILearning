@@ -33,30 +33,11 @@ const StyleCharactersList = StyleSheet.create({
         color: '#FFFFFF',
         marginBottom: 4,
     },
-    localizacaoContainer: {
-        borderTopColor: '#a3e698ff', 
-        marginTop: 8,
-        paddingTop: 8,
-        borderTopWidth: 1,
-        width:'100%',
-    },
+
     statusText:{
         color: '#4355dbff',
     },
-    localizacaoText: {
-        fontWeight: 'bold',
-        color: '#87ff24ff', 
-        marginBottom: 4,
-    },
-    localizacaoItem: {
-        marginBottom: 2,
-        flexDirection: 'row',
-    },
-    LocalizacaoOrigem: {
-        fontWeight: 'bold',
-        color: '#FFEA00',
-        marginRight: 5,
-    },
+
     defaultText: {
         color: '#ffefefff', 
     },
