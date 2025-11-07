@@ -50,9 +50,7 @@ export default function CharactersListScreen ({navigation}){
             setLoading(false);
         }
 
-        if(loading){
-            return <Loading />
-        }
+
         
         if(erro){
         return(
@@ -66,6 +64,10 @@ export default function CharactersListScreen ({navigation}){
         getPersonagens();
         
     }, [])
+
+            if(loading){
+                return <Loading />
+            }
 
     return(
         <View>

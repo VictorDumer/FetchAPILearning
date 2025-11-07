@@ -1,10 +1,11 @@
 
 import { Text, View,ActivityIndicator } from "react-native"
-export default function Loading(){
+import StyleLoading from "../Styles/StyleLoading"
+export default function Loading({mensagem}){
     return(
-        <View>
-                <ActivityIndicator size="large" color="#0000ff" />
-                <Text>Carregando personagens...</Text>
+        <View style={StyleLoading.container}>
+                <ActivityIndicator size="large" color="#1eff00ff" style={StyleLoading.loading} />
+                <Text>{mensagem}</Text>
         </View>
     )
 }
