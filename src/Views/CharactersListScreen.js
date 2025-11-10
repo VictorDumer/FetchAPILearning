@@ -75,10 +75,8 @@ export default function CharactersListScreen ({navigation}){
             data={personagens}
             onEndReached={() => console.log("Desenvolverei a rolagem infinita")}
             keyExtractor={(item) => item.id.toString()}
-            renderItem={({item}) => <Personagem item={item} navigation={navigation}
+            renderItem={({item}) => <Personagem item={item} navigation={navigation}/>}
             ListFooterComponent={Loading}
-            
-            />}
             />
         </View>
     )
