@@ -12,7 +12,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="HomeScreen">
         <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown:false}}/>
         <Stack.Screen name="Personagens" component={CharactersListScreen} options={{headerShown:false}}/>
-        <Stack.Screen name="Detalhes" component={CharactersDatailScreen} options={{ title: 'Informação detalhada dos dos personagens' }}/>
+        <Stack.Screen name="Detalhes" component={CharactersDatailScreen} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

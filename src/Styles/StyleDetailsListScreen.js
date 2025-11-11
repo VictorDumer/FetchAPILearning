@@ -5,63 +5,73 @@ const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 
 const StyleDetailsList = StyleSheet.create({
-   
+    background:{
+      backgroundColor:'#8371ef',
+      flex:1
+   },
     Container: {
-        marginTop:20,
-        height: '500',
-        backgroundColor: '#0ca565ff', 
-        padding: 15,
-        marginVertical: 8,
-        marginHorizontal: 10,
-        borderColor: '#d49b00ff', 
+        backgroundColor:'#ffffffff',
+        marginTop:height*0.1,
+        height: height*0.89,
         elevation: 5,
-        borderWidth: 1,
-        borderRadius:15,
+        marginHorizontal:width*0.02,
+        borderRadius:20
     },
     imagem: {
-        width: 300,
-        height: 300,
-        borderRadius: 45, 
-        borderWidth: 3,
-        borderColor: '#64FFDA', 
-        marginLeft: 20,
+        height: height*0.5,
+        resizeMode:'cover',
+        margin:width*0.04,
+        borderRadius:8
+    },
+    textContainer: {
+        marginHorizontal:width*0.04,
+
     },
     nome: {
         fontSize: 18,
         fontWeight: '900',
-        color: '#FFFFFF',
+        color: '#0000',
         marginBottom: 4,
-    },
-    textContainer: {
-        flex: 1,
-        justifyContent: 'center',
-    },
-    localizacaoContainer: {
-        marginTop: 8,
-        paddingTop: 8,
-        borderTopWidth: 1,
-        borderTopColor: '#a3e698ff', 
     },
     statusText:{
-        color: '#4355dbff',
+        color: '#888a96ff',
+        marginBottom:height*0.05
     },
-    localizacaoText: {
-        fontWeight: 'bold',
-        color: '#87ff24ff', 
-        marginBottom: 4,
+    localizacaoContainer:{
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-between'
     },
     localizacaoItem: {
-        flexDirection: 'row',
-        marginBottom: 2,
+        width:width*0.43,
+        height:height*0.09,
+        backgroundColor:'#dbdadaff',
+        borderWidth:1,
+        justifyContent:'center',
+        alignItems:'center',
+        padding:15,
+        borderRadius:16
     },
     LocalizacaoOrigem: {
         fontWeight: '600',
-        color: '#FFEA00',
+        color: '#888a96ff',
         marginRight: 5,
     },
     defaultText: {
-        color: '#ffefefff', 
+        color: '#020101ff', 
     },
+    gosteiButton:{
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:'#020101ff',
+        height:height*0.08,
+        marginTop:height*0.04,
+        borderRadius:10
+    },
+    gosteiText:{
+        color:'#dbdadaff'
+    }
 
 });
 export default StyleDetailsList;
